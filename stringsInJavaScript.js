@@ -43,3 +43,8 @@ console.log(url.replace('.', '$'));
 
 //it check the value you given it includes on url or not
 console.log(url.includes('movie'));
+
+
+
+
+//++++++++++++++++++++++++++++++++++++++   go to browser and study about string method     ++++++++++++++++++++++++
