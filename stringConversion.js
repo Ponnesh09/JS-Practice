@@ -30,7 +30,24 @@ let str3 = str1 + str2;
 // console.log(2+"20" - "10");                 210
 // console.log((5 - 4) + 2 + 10 * 5 % 2);      3
 
+// console.log(0 + true);        1
+// console.log("0" + true);        0true
+// console.log("" + true);         true
 
 
 
 
+// prefix and postfix expressions
+
+// Infix Expression 	Prefix Expression	Postfix Expression
+// 2 + 3	            + 2 3	            2 3 + ;
+// 4 * 5	            * 4 5	            4 5 *;
+// 2 + 3 * 4	        + 2 * 3 4	        2 3 4 * +;
+// (2 + 3) * 4	*       + 2 3 4	            2 3 + 4 *;
+// 2 - 3 * 4 + 5	    + - 2 * 3 4 5	    2 3 4 * - 5 +;
+
+
+
+// let gameCounter = 100;
+// ++gameCounter;
+// console.log(gameCounter);
