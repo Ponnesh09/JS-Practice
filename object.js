@@ -125,7 +125,60 @@ function User (name, age){
 const user1 = new User ("ponnesh",90);
 const user2 = new User ("gopal",69);
 
-console.log(user1.name);
-user1.greeting();
+// console.log(user1.name);
+// user1.greeting();
+
+
+//Object destructure
+
+const person = {name :'petter',age : 23, job :" developer"}
+
+// console.log(person.name);
+
+// Standard Destructuring
+const {name, age} = person
+// console.log(name);  // petter
+
+// Renaming Variables          {renamed variable is role}
+const {job : role} = person
+// console.log(role);      //developer
+
+
+// Default Values                ist like assigning new value to object 
+const {location = "mumbai"} = person
+// console.log(location);
+
+
+// console.log(person);
+
+
+// Json object format
+
+// {
+//     "name" : "leo",
+//     "age" : "98",
+//     "email" : "email.com",
+//  }
+
+
+//This also JSON format  it provide sometimes object format, sometimes array format 
+
+// [
+//     {},{},{}
+// ]
+
+// {
+//     {},{},{}
+// }
+
+// may be
+
+// [
+//     [],[],[]
+// ]
+
+// {
+//     [],[],[]
+// }
 
 
