@@ -5,7 +5,7 @@ let score = 100
 let newScore = new Number(100)
 // console.log(newScore);          //[Number: 100]
 
-console.log(newScore.toString().length);      // 3
+//console.log(newScore.toString().length);      // 3
 // console.log(newScore.toFixed(1));            // 100.0
 
 let newNumber = 28.97887
@@ -15,14 +15,19 @@ const count = 524000000000
 // console.log(count.toLocaleString('en-IN'));          //5,24,00,00,00,000
 
 //+++++++++   Math   +++++++++++++++ 
-console.log(Math);
-console.log(Math.random());
-console.log(Math.abs(-4));
-console.log(Math.round(45.689789));
-console.log(Math.ceil(25.6555));
-console.log(Math.floor(26.6565));
-console.log(Math.min(2,865,34,4,3));
-console.log(Math.max(2,865,34,4,3));
+// console.log(Math);
+// console.log(Math.random());
+// console.log(Math.abs(-4));
+// console.log(Math.round(45.689789));
+// console.log(Math.ceil(25.6555));
+// console.log(Math.floor(26.6565));
+// console.log(Math.min(2,865,34,4,3));
+// console.log(Math.max(2,865,34,4,3));
 
 
+console.log(Math.floor(Math.random()*10)+1);
 
+let min = 10
+let max = 20
+
+console.log(Math.floor(Math.random()*(max - min +1)+ min));   // max - min = 10     + min = 10   total 20 number will generated between 10 to 20  +1 value cant be zero 
