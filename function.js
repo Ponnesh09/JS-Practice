@@ -5,7 +5,7 @@
 // } :- writing definition
 // ( ){ } :- function syntax
 // Variable :- name      ( ex :  sayMyName)	 :- reference 
-// sayMyName ( )  :- execution      [  calling function ]
+// sayMyName ( )  :- execution      [  calling a function ]
 // sayMyName( ) :- arguments ( )
 
 
@@ -43,5 +43,51 @@ function userLoginStatus (userName = "jon wick"){
 }
 // console.log(userLoginStatus());
 // console.log(userLoginStatus("red dragon"));
+
+
+function  totalItemsPrice (item1, item2, item3,...num1){
+   return num1
+}
+// console.log(totalItemsPrice(100, 200, 500, 150, 255, 300));
+
+// . . . num1 = rest operator   . . .spread operator 
+
+
+//object accessing in function
+
+const user = {
+    name : "pet",
+    age : 12
+}
+
+function handleObject (userObject) {
+    console.log(`i am ${userObject.name} `);
+}
+
+// first 
+// handleObject(user)
+
+// second
+// handleObject({
+//     name : "petter",
+//     age : 45
+// })
+
+
+// array accessing in function
+
+const myArray = [10,20,30,40]
+
+function arrayHandle (getArray) {
+    return getArray[1]
+}
+
+// console.log(arrayHandle(myArray));
+
+
+function arrayHandle1 (getArray1) {
+    return getArray1[1]
+}
+// console.log(arrayHandle1([99,88,77,55,]));
 
 
