@@ -46,3 +46,7 @@ globalFunction()
 
 // console.log(globalScopeVal);
 
+
+
+// Scopes will be differentiated like plain JS code and node-based code 
+// so learn it window node too
