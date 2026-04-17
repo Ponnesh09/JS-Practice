@@ -169,15 +169,83 @@ switch (day){
 
 // Syntax
 // if (condition) {
-    
 // } else {
-    
 // }
 
-let result1 = true;
-if (result1) {
-    console.log("if condition true execute this  as true status");
-} else {
-    console.log("if condition false execute this  as false status");
-}
+// let result1 = true;
+// if (result1) {
+//     console.log("if condition true execute this  as true status");
+// } else {
+//     console.log("if condition false execute this  as false status");
+// }
 
+
+// let userEmail = " nothing@gmail.com"
+
+// if(userEmail){
+//     console.log("we got an email");
+// }else{ console.log("enter your email");
+// }                                                //true
+
+
+// let userEmail = " "
+// if(userEmail){console.log("we got email");
+// }else{console.log("enter your email");
+// }                                                //true
+
+
+// let userEmail = []
+// if(userEmail){console.log("we got");
+// }else{console.log("enter your email");
+// }
+
+
+
+// // if else 
+// Falsie value    false , 0 , -0 , BigInt On, “” , null , undefined , NaN   
+// Truthy value   truth , “0” , ‘false’ , “ ” , [] , {} , function(){} 
+
+
+// let newArr = []
+
+// if(newArr.length === 0){
+//     console.log("array is empty");
+// }else{console.log("we got data");
+// }
+
+
+let myObj = {}
+
+// if(myObj.length === 0){              // we got props                    
+//     console.log("object is empty");
+// }else{console.log("we got props");
+// }                                        
+
+// if(Object.keys(myObj).length === 0){        // object is empty
+// //     // console.log("object is empty");
+// }else{console.log("we got props");
+// }
+
+
+// Nullish coalescing operator  (??) : null undefined
+
+// The nullish coalescing operator (??) is a logical operator in JavaScript 
+// that returns its right-hand operand when the left-hand operand is null or undefined, 
+// and otherwise returns the left-hand operand. 
+// It provides a secure way to set default values, 
+// ignoring other falsy values like 0 or "" (empty strings)
+
+let val1; 
+val1 = 5 ?? 10 ,                   //  5
+val1 = null ?? 10 ,                //  10
+val1 = undefined ?? 15 ,           //  15
+val1 = null ?? 10 ?? 50            //10
+// console.log(val1);
+
+
+//ternary operator  condition ? true : false 
+
+let iceCream = 500  
+iceCream <= 100 ? console.log("Less than 100") : console.log("More than 100");
+
+ 
