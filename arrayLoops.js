@@ -96,7 +96,83 @@ for(const key in myObject){
 const num = [1,2,3,4,5,6]
 
 for(const key in num){
-    console.log(num[key]);
+    // console.log(num[key]);
     
 }
+
+//FOR EACH  loop 
+
+const programlag = ["JS","JAVA","PY","CPP","JSX","HTML","CSS"]
+
+//1st
+
+programlag.forEach(function (val){
+    // console.log(val);
+    
+})
+
+//2nd
+
+// arrow function
+// programlag.forEach((val)=> console.log(val) )
+
+
+//3rd
+
+function printMe(val){
+    // console.log(val);
+}
+programlag.forEach(printMe)
+
+
+//4th There is 3 parameter  you can give  value, index, array
+
+programlag.forEach((item, index, arr)=>{
+    // console.log(index, item, arr );
+    
+})
+
+
+//5th 
+const program = ["JS","JAVA","PY","CPP","JSX","HTML","CSS"]
+
+const shortForm = program.forEach((item)=>{
+    // console.log(item);
+    return item
+    
+})
+
+// console.log(shortForm);          // output undefined 
+
+
+const myCoding = [
+    
+    {
+        langName : "JavaScript" ,
+        langFileName : "js"
+    },
+
+    {
+        langName : "Java" ,
+        langFileName : "java"
+    },
+
+    {
+        langName : "Python" ,
+        langFileName : "py"
+    },
+
+    {
+        langName : "c plus plus" ,
+        langFileName : "cpp"
+    },
+]
+
+
+myCoding.forEach((item)=>{
+        
+        // console.log(`language Name ${item.langName} and file name ${item.langFileName}`);
+        
+})
+
 
