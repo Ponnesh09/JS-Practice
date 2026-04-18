@@ -19,7 +19,7 @@
 // Syntax: array.reduce((accumulator, currentValue) => { ... }, initialValue)
 
 
-//Filter
+//Filter method
 
 const myArray = [1,2,3,4,5,6,7,8,9,10]
 
@@ -88,7 +88,7 @@ const myBook1 = books.filter((bk)=>{
 
 
 
-// Map
+// Map method
 
 const newMapNum = myArray.map( (num)=> num + 10 ) 
     // console.log(newMapNum);
@@ -110,9 +110,56 @@ const newMapNum2 = myNumbs
                         .map((item)=> item + 5)         //calculation
                         .filter((item)=> item >= 50)        // i can fix range using filter
 
-   console.log(newMapNum2);
+//    console.log(newMapNum2);
                         
 
 
 
+   // Reduce method
+
+   const myArray1 = [1,2,3,4,5]
+
+   const myTotal = myArray1.reduce(function(accumulator, currentValue){
+    // console.log(` Accumulator = ${accumulator} and  CurrentValue = ${currentValue}`);
+            return accumulator + currentValue
+   },0)
+
+//    console.log(myTotal);
    
+
+ const myTotal1 = myArray1.reduce((acc, curVal)=> acc + curVal , 0)
+//  console.log(myTotal1);
+ 
+
+//set of Data
+
+const shoppingCart = [
+    {
+        itemName: "js course",
+        price: 2999
+    },
+    {
+        itemName: "py course",
+        price: 999
+    },
+    {
+        itemName: "mobile dev course",
+        price: 5999
+    },
+    {
+        itemName: "data science course",
+        price: 12999
+    },
+]
+
+
+const totalAmount = shoppingCart.reduce((acc , item)=> acc + item.price ,0)
+// console.log(totalAmount);
+
+
+// finding total
+
+const values = [10,20,30,40,50,60,70,80,90,100]
+const total = values.reduce((acc,curV)=> acc + curV , 0)
+console.log(total);
+
