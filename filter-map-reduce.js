@@ -88,3 +88,31 @@ const myBook1 = books.filter((bk)=>{
 
 
 
+// Map
+
+const newMapNum = myArray.map( (num)=> num + 10 ) 
+    // console.log(newMapNum);
+    
+
+//using return key word
+
+const newMapNum1 = myArray.map( (item)=>{
+    return item + 20;
+} )
+// console.log(newMapNum1);
+
+
+// Chaining in JS
+
+const myNumbs = [1,2,3,4,5,6,7,8,9,10]
+const newMapNum2 = myNumbs
+                        .map((item)=> item * 10)
+                        .map((item)=> item + 5)         //calculation
+                        .filter((item)=> item >= 50)        // i can fix range using filter
+
+   console.log(newMapNum2);
+                        
+
+
+
+   
