@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body{
+            background: #000000;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(96, 87, 199, 0.44) 47%, rgba(0, 0, 0, 1) 100%);
+        }
+
+        #clock {
+        position: absolute;
+        top: 300px;
+        left: 455px;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 200px;
+        color: rgb(255, 255, 255);  
+        }
+
+        #head {
+            position: absolute;
+            top: 300px;
+            left: 455px;
+            font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        color: rgb(255, 255, 255);  
+        }
+
+        #date {
+            position: absolute;
+            top: 550px;
+            left: 70%;
+            font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        }
+
+    </style>
+    
+    <h4 id="head">Your Local Time</h4>
+    <div id="clock"></div>
+    <div id="date"></div>
+
+     <script src="clock.js"></script>
+</body>
+</html>
