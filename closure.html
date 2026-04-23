@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure aur chai</title>
+</head>
+<body style="background-color: #313131;">
+    
+    <button id="blue">Blue</button>
+    <button id="green">Green</button>
+    <button id="red">Red</button>
+    <button id="yellow">Yellow</button>
+    <button id="purple">Purple</button>
+
+
+    <script>
+
+        // example 1
+
+            // function outer (){
+            //     let name = "petter"
+            //             console.log(`this is from outer function ${name}`);
+                        
+            //     function inner(){
+            //         console.log(`this is from inner function ${name}`);
+            //     }
+            // //     inner()
+            // // }
+            // // outer()
+
+
+        // example 2
+
+
+        function outer(){
+            let userName = "petter"
+                console.log(`This is Outer function ${userName}`);
+                // console.log(`This is Outer function ${password}`);
+                // console.log(`This is Outer function ${twoStepPass}`);
+                // console.log(`This is Outer function ${passwordTwo}`);
+
+
+            function innerOne(){
+                let password = 2345
+                console.log(`This is Inner One function ${userName}`);
+                console.log(`This is Inner One function ${password}`);
+                // console.log(`This is Inner One function ${twoStepPass}`);
+                // console.log(`This is Inner One function ${passwordTwo}`);
+
+
+                function innerOneTwo(){
+                    let passwordTwo = 22334455
+                console.log(`This is Inner One point two function ${userName}`);
+                console.log(`This is Inner One point two function ${password}`);
+                // console.log(`This is Inner One point two function ${twoStepPass}`);
+                console.log(`This is Inner One point two function ${passwordTwo}`);
+                }
+                // innerOneTwo()
+
+            }
+            
+            function innerTwo(){
+                let twoStepPass = "lol"
+                console.log(`This is Inner Two function ${userName}`);
+                // console.log(`This is Inner Two function ${password}`);
+                console.log(`This is Inner Two function ${twoStepPass}`);
+                // console.log(`This is Inner Two function ${passwordTwo}`);
+
+            }
+        //     innerOne()
+        //     innerTwo()
+        }
+        // outer()
+
+
+
+
+    //     function makeFunc() {
+    //      const name = "Mozilla";
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     return displayName;
+    // }
+
+    // const myFunc = makeFunc();
+    // myFunc();
+
+    // example 1
+
+    // document.getElementById('orange').onclick = function(){
+    //     document.body.style.backgroundColor = 'orange'
+    // }
+
+    // document.getElementById('green').onclick = function(){
+    //     document.body.style.backgroundColor = 'green'
+    // }
+
+
+    // example 2
+
+    function clickHandler(color){
+        // document.body.style.backgroundColor = `${color}`
+        return function(){
+        document.body.style.backgroundColor = `${color}`
+        }
+        }
+        document.getElementById('blue').onclick = clickHandler('blue')
+        document.getElementById('green').onclick = clickHandler('green')
+        document.getElementById('red').onclick = clickHandler('red')
+        document.getElementById('yellow').onclick = clickHandler('yellow')
+        document.getElementById('purple').onclick = clickHandler('purple')
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
