@@ -69,8 +69,6 @@ function cleanUpGuess (guess) {
     guessSlot.innerHTML += `${guess}`;          // added guessed number 1 by 1 
     numGuess++;                                 //guessed number count ++
     remaining.innerHTML = `${11 - numGuess}`       // numGuess value  - from 11 it shows remaining value
-
-
 }
 
 function displayMessage (message) {
