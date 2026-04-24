@@ -31,3 +31,12 @@ newUser.addLecture()
 
 const newUserMore = new User("new joint")
 newUserMore.logMe()
+
+
+
+// User === newUserMore
+// instanceof
+
+
+
+  
