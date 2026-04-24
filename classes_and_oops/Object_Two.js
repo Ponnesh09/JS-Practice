@@ -56,3 +56,25 @@ for(let[key,value] of Object.entries(book)){
 }
 
 
+
+//object Getter and setter 
+
+
+const user ={
+    _email :"petter@gmail.com",
+    _password : "toxin",
+
+    get email(){
+        return `${this._email.toUpperCase()}`
+    },
+    set email(value){
+        this._email = value
+    }
+}
+
+const tea = Object.create(user);
+
+console.log(tea._email);     //petter@gmail.com
+console.log(tea.email);     //PETTER@GMAIL.COM
+
+
