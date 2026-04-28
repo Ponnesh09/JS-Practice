@@ -17,7 +17,7 @@ const count = 524000000000
 //+++++++++   Math   +++++++++++++++ 
 // console.log(Math);
 // console.log(Math.random());
-// console.log(Math.abs(-4));
+// console.log(Math.abs(-5));             //5
 // console.log(Math.round(45.689789));
 // console.log(Math.ceil(25.6555));
 // console.log(Math.floor(26.6565));

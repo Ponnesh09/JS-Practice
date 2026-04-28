@@ -26,7 +26,7 @@ const gameName = new String('ponneshRamaswsamy')
 const newStrings = gameName.substring(0,5);
 // console.log(newStrings);
 
-const  anotherNewString = gameName.slice(5, 10);
+const anotherNewString = gameName.slice(5, 10);
 // console.log(anotherNewString);
 
 

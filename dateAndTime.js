@@ -17,7 +17,7 @@ myDate.toLocaleString();
 // console.log(myDate.getTimezoneOffset());
 
 
-let myCreatedDate = new Date(2025, 0,1 )    //day, month, date 1 to 31     it all start from 0  index value is 0
+let myCreatedDate = new Date(2025, 0,1 )    //day, month, (date 1 to 31)     it all start from 0, index value is 0
 // console.log(myCreatedDate.toLocaleDateString());
 
 console.log(myCreatedDate.getTime());

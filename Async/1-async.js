@@ -73,10 +73,17 @@ const sayDate = function (str){
     console.log(str, Date.now());
     
 }
+// console.log(sayDate);
+
 
 // setInterval(sayDate, 1000, "hii")
 
+// const intervalId2 =  setTimeout(sayDate, 5000, "from set time out")
+
+// clearTimeout(intervalId2)
+
 // const intervalId = setInterval(sayDate, 1000, "time now")
+
 
 // clearInterval(intervalId)
 
