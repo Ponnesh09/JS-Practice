@@ -1,7 +1,7 @@
 
 // try it in window   (BROWSER) it little easer
 
-//All DOM selector node list and html collection 
+// +++++++++ All DOM selector node list and html collection ++++++
 
 document.getElementById('title')
 // output 
@@ -27,7 +27,7 @@ document.getElementById('title').classList.add
 // output
 // ƒ add() { [native code] } 
 
-// Get Attributes
+// ++++++++++++++ Get Attributes ++++++++++++
 
 document.getElementById('title').getAttribute
 // output
@@ -43,7 +43,7 @@ document.getElementById('title').getAttribute('id')
 // output
 'title'
 
-//set 
+// ++++++++++++++ set ++++++++++++++++
 //Set attribute can over write your original attribute name 
 
 document.getElementById('title').getAttribute('class')
@@ -67,7 +67,7 @@ console.log(title)
 /* <h1 id=​"title" class=​"titleClass">​All DOM Elements​</h1>​ */
 
 
-//  Styles Attributes
+// ++++++++++ Styles Attributes +++++++++++++
 
 const head = document.getElementById('title')
 undefined
@@ -87,7 +87,7 @@ head.textContent    //will show hidden text also         it is the different
 head.innerHTML      //  it show including  tags also
 
 
-// Query selector 
+// +++++++++++++++ Query selector +++++++++++++++++++
 
 document.querySelector('h2')
 /* <h2 id=​"title2">​title two ​</h2>​  */
@@ -108,7 +108,7 @@ document.querySelectorAll('h1')
 // length: 3
 
 
-//Apply style with query selector
+// ++++++++++++ Apply style with query selector ++++++++++++++++++++
 
 document.querySelector('ul')
 /* <ul id=​"unOrderList">​…​</ul>​<li id=​"list1">​…​</li>​<li id=​"list2">​…​</li>​<li id=​"list3">​…​</li>​<li id=​"list4">​…​</li>​<li id=​"list5">​…​</li>​</ul>​  */
