@@ -43,6 +43,27 @@ function test (){
 }
 // test()
 
+//illegal shadowing
+
+function test1 (){
+    var b=10
+    let a = 22
+
+    if(true){
+        var b = 20;
+        let a = 11;
+        console.log(b);
+        console.log(a); 
+        
+    }
+
+    console.log(b);
+    console.log(a);
+    
+    
+}
+// test1()
+
 
 
 
