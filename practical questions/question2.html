@@ -42,8 +42,17 @@
 
 
 
+    // what is reduce method
+    //the reduce method reduces an array od value down to just one value, if there is no initial value (0) it takes first element of array as value for accumulator
     
-       
+    const sum = [10,20,30,40,50]
+
+    const total = sum.reduce((acc, curr, i, arr)=>{
+            return acc + curr 
+    },0)
+
+        console.log(total);
+        
 
     </script>
 </body>
