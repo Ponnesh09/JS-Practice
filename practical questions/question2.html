@@ -1,0 +1,32 @@
+<!-- map, filter and reduce -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // what is map() ?  
+        // :- in js map() method is use for creating new array from existing one by applying function to each one of the elements fo the first array
+
+       const num = [1,2,3,4,5]
+
+       const multipleByTwo = num.map((nums, i ,arr)=>{
+    //    return numbs*2
+     console.log(`index ${i} ,  array ${arr} , this numbers are multiple by rwo :-  ${nums *2}`)
+     
+       })
+
+       console.log(multipleByTwo);
+  
+      
+
+    </script>
+</body>
+</html>
