@@ -161,10 +161,10 @@
 
          //Q3 return class a  std equal to 8th 
 
-         let details = student.filter((stud)=>{
+         let details1 = student.filter((stud)=>{
             return stud.class == "A" && stud.std > 6
          })
-        //  console.log(details);
+        //  console.log(details1);
 
 
 
@@ -172,8 +172,24 @@
 
          let sumMark = student.reduce((acc,currVal)=>acc + currVal.std,0);
 
-         console.log(sumMark);
+        //  console.log(sumMark);
          
+        
+        // Q5 returns only name of student who score more then 50 
+        
+        let details = [
+            {name:"peter",class:"A", mark:80},
+            {name:"parker",class:"B", mark:70},
+            {name:"jon",class:"C", mark:60},
+            {name:"ant",class:"A", mark:80},
+            {name:"antMan",class:"B", mark:40},
+        ]
+
+        const student1 = details.filter((stu)=> stu.mark > 50).map((stu)=>stu.name)  
+        console.log(student1);
+
+
+        
         
 
     </script>
