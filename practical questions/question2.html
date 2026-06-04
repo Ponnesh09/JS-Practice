@@ -98,6 +98,36 @@
     //     return accumulator;
     // }
 
+
+
+    //map vs forEach 
+    // this both are array function to loop thought the items of the array 
+
+    const arr =[1,2,3,4,5]
+
+    const myMap = arr.map((num)=>{
+        return num + 2
+    })
+    console.log(myMap);
+    console.log(`Original array after map method ${arr}`);
+    
+    //map it doest modified original array 
+    // we can use other method like filter in map coz it returns new array 
+
+
+    const myForEach = arr.forEach((ar,i)=>{
+        arr[i] = ar +2
+    })               
+    
+    //it doest returns the value
+    //   we can't use other method like filter in forEach coz it returns nothing
+
+    console.log(myForEach,arr);
+    console.log(`Original array after reduce method using index ${arr}`);
+
+    
+    
+
     </script>
 </body>
 </html>
