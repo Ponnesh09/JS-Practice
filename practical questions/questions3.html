@@ -59,6 +59,36 @@ function displayMultiple(fn){
 })(1)
 
 
+// Q6 function scope
+
+// The following variables are defined in the global scope
+const num1 = 2;
+const num2 = 4;
+const name = "jon";
+
+// This function is defined in the global scope
+function multiply() {
+  return num1 * num2;
+}
+
+console.log(multiply()); // 60
+
+// A nested function example
+function getScore() {
+  const num1 = 2;
+  const num2 = 5;
+
+  function add() {
+    return `${name} scored ${num1 + num2}`;
+  }
+
+  return add();
+}
+
+console.log(getScore()); // "jon scored 7"
+
+
+
 
 
     </script>
