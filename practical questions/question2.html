@@ -181,14 +181,25 @@
             {name:"peter",class:"A", mark:80},
             {name:"parker",class:"B", mark:70},
             {name:"jon",class:"C", mark:60},
-            {name:"ant",class:"A", mark:80},
-            {name:"antMan",class:"B", mark:40},
+            {name:"ant",class:"A", mark:50},
+            {name:"antMan",class:"B", mark:20},
         ]
 
-        const student1 = details.filter((stu)=> stu.mark > 50).map((stu)=>stu.name)  
-        console.log(student1);
+        // const student1 = details.filter((stu)=> stu.mark > 50).map((stu)=>stu.name)  
+        // console.log(student1);
 
 
+        // Q6 add 20 mark to less then 60 mark students , find mark greater then 60 , and total it 
+
+       const totalMark = details.map((std)=>{
+        if(std.mark < 60){
+            std.mark += 20
+        }
+        return std
+       }).filter((std)=>std.mark > 60).reduce((acc, currVal)=> acc + currVal.mark,0)
+
+       console.log(totalMark);
+       
         
         
 
