@@ -71,7 +71,7 @@ function multiply() {
   return num1 * num2;
 }
 
-console.log(multiply()); // 60
+// console.log(multiply()); // 60
 
 // A nested function example
 function getScore() {
@@ -85,9 +85,17 @@ function getScore() {
   return add();
 }
 
-console.log(getScore()); // "jon scored 7"
+// console.log(getScore()); // "jon scored 7"
 
 
+// Q7 function scope O/P Based Question 
+
+for(var i = 0;  i < 5; i++){
+    setTimeout(function () {
+        console.log(i);
+        
+    }, i * 1000)
+}
 
 
 
