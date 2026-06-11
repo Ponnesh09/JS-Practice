@@ -28,9 +28,8 @@ let BigInt = 763456738547654785n;
 
  let myOject = {
     name : "petter",
-    age : "21"
+    age : 21
  }
-
  console.log(myOject.name);
  
 
