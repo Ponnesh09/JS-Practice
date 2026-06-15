@@ -6,9 +6,9 @@
 // }
 
 
-// =  assigned operator
-// ==   equal check
-// ===  strict check   ( value and datatype )
+// =  assigned operator
+// ==   equal check
+// ===  strict check   ( value and datatype )
 
 //if
 
@@ -202,8 +202,8 @@ switch (day){
 
 
 // // if else 
-// Falsie value    false , 0 , -0 , BigInt On, “” , null , undefined , NaN   
-// Truthy value   truth , “0” , ‘false’ , “ ” , [] , {} , function(){} 
+// Falsie value    false , 0 , -0 , BigInt On, “” , null , undefined , NaN   
+// Truthy value   truth , “0” , ‘false’ , “ ” , [] , {} , function(){} 
 
 
 // let newArr = []

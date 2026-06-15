@@ -19,7 +19,7 @@ const jsUser = {
 
 jsUser.email = "venom@gmail.com"
 // console.log(jsUser.email);
-// Object.freeze(jsUser);                          //Object.freeze()
+// Object.freeze(jsUser);                          //Object.freeze(object name)
 jsUser.email = "carnage@gmail.com"
 // console.log(jsUser.email);
 
@@ -170,6 +170,7 @@ const {location = "mumbai"} = person
 // {
 //     {},{},{}
 // }
+
 
 // may be
 

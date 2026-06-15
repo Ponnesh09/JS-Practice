@@ -44,7 +44,7 @@ let my1Arr = ["red","white", "black"]
 let my2Arr = ["orange","green","blue"]
 
 // my1Arr.push(my2Arr)
-// console.log(my1Arr); not 
+// console.log(my1Arr);             --- not 
 
 let allColor = my1Arr.concat(my2Arr)      // concat
 // console.log(allColor);
