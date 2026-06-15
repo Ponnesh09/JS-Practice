@@ -1,5 +1,5 @@
 
-<!-- find vowels -->
+<!--  -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,7 @@
     
     <script>
         
-        // Q1
+        // Q1 find vowels 
 
         let a = "javascript"
         let vowels = ["a","e","i","o","u"];
@@ -26,9 +26,22 @@
         // output = 3 
 
 
+        // Q2 find count of repeated  litters 
+
+       let name = "peter parker"
+       let obj = {}
+
+       for(let i=0; i<name.length; i++){
+        if(obj[name[i]]) obj[name[i]]++ ;
+        else obj[name[i]] = 1 ;
+       }
+
+       console.log(obj);
+
+       //   output = {p: 2, e: 3, t: 1, r: 3, " ": 1, …}
+       
         
-
-
+       
 
 
     </script>
