@@ -52,6 +52,30 @@
        }
        console.log(ans);
        
+    //    output = 56
+
+
+    //Q4 check palindrome
+
+       let word = "madam"
+
+       let i = 0;
+       let j = word.length-1
+
+    function checkPalindrome (){
+        while (i<=j) {
+            if(word[i] != word[j]) return false
+        i++
+        j--
+     }
+        return true
+    }
+    console.log(checkPalindrome(word));
+    
+
+   
+
+
 
     </script>
 </body>
