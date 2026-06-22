@@ -173,6 +173,19 @@ switch (fruit) {
 // Output: This is a fruit.
 
 
+// Q8 
+// Switch Case Precision Issuesswitch statements use strict equality (===). They check both the value and the data type. 
+// Floating-point math can cause unexpected mismatches. 
+
+value = 0.1 + 0.2; // Evaluates to 0.30000000000000004 due to binary precision
+switch (value) {
+  case 0.3:
+    console.log("Matches 0.3");
+    break;
+  default:
+    console.log("Does not match 0.3 exactly!"); 
+}
+// Output: Does not match 0.3 exactly!
 
     </script>
 </body>
