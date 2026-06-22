@@ -13,19 +13,39 @@
 
 //  Q1
 
-let ans = Number(prompt("what is your age "))   //if value is number it automatic it change to number so it will compare and give true or false if give string we need to convert string to number other wise we can check 
-console.log(ans);
+// let ans = Number(prompt("what is your age "))   //if value is number it automatic it change to number so it will compare and give true or false if give string we need to convert string to number other wise we can check 
+// console.log(ans);
 
-// if(NaN === ans) X
+// // if(NaN === ans) X
 
- if(isNaN(ans)){console.log("enter valid data");
- }
+//  if(isNaN(ans)){console.log("enter valid data");
+//  }
 
-else if  (ans >= 18 ) {
-    console.log("you can vote ");
+// else if  (ans >= 18 ) {
+//     console.log("you can vote ");
     
-}else{console.log("you can not vote your under 18 ");
+// }else{console.log("you can not vote your under 18 ");
+// }
+
+
+// Q2 shope discount 
+
+let amount = Number(prompt("what is the final amount ?"))
+console.log(`Net Amount :- ${amount}`);
+
+
+if(amount > 0 && amount <= 5000){
+    console.log(amount);
+
+}else if(amount > 5000 && amount <= 7000){
+    console.log(`Discounted Amount :- ${Math.floor((5*amount)/100)}`);
+    
+}else if(amount > 7000 && amount <= 9000){
+    console.log(`Discounted Amount :- ${Math.floor((10*amount)/100)}`);
+    
+}else{console.log(`Discounted Amount :- ${Math.floor((20*amount)/100)}`);
 }
+
 
 
 
