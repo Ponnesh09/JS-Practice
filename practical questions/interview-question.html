@@ -113,7 +113,23 @@ for(let i = arr1.length-1 ; i>=0 ; i--){
 console.log("revers array "+revArr);
 
 
+//Q8 Find Second Largest Number
 
+let arr2 = [1,2,3,4,5]
+
+let first = -Infinity;
+let second = -Infinity;
+
+for(let num of arr2){
+    if(num > first){ // condition true
+        second = first
+        first = num
+     
+    }else if (num > second && num !== first){
+        second = num
+    }
+}
+console.log(second);
 
 
 
