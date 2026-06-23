@@ -132,6 +132,25 @@ for(let num of arr2){
 console.log(second);
 
 
+//Q9 Find Second Smallest Number
+
+let minNum = [4,8,6,3,1]
+
+let f = Infinity;
+let s = Infinity;
+
+for(let num of minNum){
+    if(num < f){
+        s = f;
+        f = num;
+    } else if (num < s && num !== f){
+        s = num;
+    }
+}
+
+console.log(s);
+
+
 
     </script>
 </body>
