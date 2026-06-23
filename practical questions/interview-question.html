@@ -151,6 +151,19 @@ for(let num of minNum){
 console.log(s);
 
 
+//Q10 Check Anagram
+
+let str1 = "listen";
+let str2 = "silent";
+
+function isAnagram(a,b){
+    return a.split('').sort().join('') === b.split('').sort().join('') 
+            // console.log(a.split('').sort().join(''));
+            // console.log(b.split('').sort().join('')); 
+}
+console.log(isAnagram(str1,str2));
+
+
 
     </script>
 </body>
