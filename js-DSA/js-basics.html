@@ -212,42 +212,67 @@ for(let i = 1 ; i<100; i++){
 // let pt = prompt("Add Number")
 
 
-if(null === pt){
-    console.log("canceled");
+// if(null === pt){
+//     console.log("canceled");
     
-}else{
+// }else{
 
-    let n = Number(pt);
+//     let n = Number(pt);
     
-if(isNaN(n)){
-    console.log("Enter valid Number");
+// if(isNaN(n)){
+//     console.log("Enter valid Number");
 
-}else{
+// }else{
     
-    if (n > 0) {
-        let sum = 0
+//     if (n > 0) {
+//         let sum = 0
        
-        for(let i=1; i<=n; i++){  
+//         for(let i=1; i<=n; i++){  
            
-            sum =  sum + 1
-        }
-        console.log(sum);
+//             sum =  sum + i
+//         }
+//         console.log(sum);
           
-    }
-    else{
-        console.log("Should be number positive and more than 0 ");
+//     }
+//     else{
+//         console.log("Should be number positive and more than 0 ");
         
-    }
-}
+//     }
+// }
 
-}
+// }
+
 //study about h cases and handle h cases 
 
-// Q12 
+// Q12 sum of n natural numbers and factorial number 
 
 
+let prt = prompt("Enter Positive value to get factorial number")
 
+if(null === prt){ 
+    console.log("Canceled");
+    
+}else{
 
+    let n = Number(prt)
+
+    if(isNaN(n)){
+            console.log("Enter valid number");
+        
+    }else{
+        if(n > 0){
+            let fact = 1;
+            for(let i = 1; i<=n ; i++){
+                    fact = fact * i 
+            }
+            console.log(fact);
+            
+        }else{
+            console.log("should be +ve or more than 0");
+            
+        }
+    }
+}
 
 
 
