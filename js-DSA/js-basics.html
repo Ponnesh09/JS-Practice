@@ -196,14 +196,14 @@ switch (value) {
 // Q 9 print n hello worlds 
 
 for(let i = 0 ; i<100; i++){
-    console.log("hello world"); 
+    // console.log("hello world"); 
 }
 
 
 // Q 10  one to number of n 
 
 for(let i = 1 ; i<100; i++){
-    console.log("hello world"); 
+    // console.log("hello world"); 
 }
 
 
@@ -247,34 +247,66 @@ for(let i = 1 ; i<100; i++){
 // Q12 sum of n natural numbers and factorial number 
 
 
-let prt = prompt("Enter Positive value to get factorial number")
+// let prt = prompt("Enter Positive value to get factorial number")
 
-if(null === prt){ 
+// if(null === prt){ 
+//     console.log("Canceled");
+    
+// }else{
+
+//     let n = Number(prt)
+
+//     if(isNaN(n)){
+//             console.log("Enter valid number");
+        
+//     }else{
+//         if(n > 0){
+//             let fact = 1;
+//             for(let i = 1; i<=n ; i++){
+//                     fact = fact * i 
+//             }
+//             console.log(fact);
+            
+//         }else{
+//             console.log("should be +ve or more than 0");
+            
+//         }
+//     }
+// }
+
+
+
+//Q 13 factors number 
+
+let facNum = prompt("Enter Positive value to get factorial number")
+
+if(null === facNum){ 
     console.log("Canceled");
     
 }else{
 
-    let n = Number(prt)
+    let n = Number(facNum)
 
     if(isNaN(n)){
             console.log("Enter valid number");
         
     }else{
-        if(n > 0){
-            let fact = 1;
-            for(let i = 1; i<=n ; i++){
-                    fact = fact * i 
+        if(n>0){
+            for(let i=1;i<=n; i++){
+                if(n%i === 0){
+                    console.log(i);
+                }
+                console.log(n);
+                
             }
-            console.log(fact);
-            
         }else{
-            console.log("should be +ve or more than 0");
+            console.log("should be +ve or more then 0");
             
         }
-    }
-}
 
-//Q 13
+    }
+
+    }
 
     </script>
 </body>
