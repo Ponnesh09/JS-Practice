@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Ponnesh09/JS-Practice/issues"
   },
-  "homepage": "https://github.com/Ponnesh09/JS-Practice#readme"
+  "homepage": "https://github.com/Ponnesh09/JS-Practice#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
