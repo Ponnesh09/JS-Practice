@@ -47,14 +47,29 @@ let prompt = require('prompt-sync')();
 
 // Q4 right angle triangle 
 
-let n = Number(prompt("enter"))
+// let n = Number(prompt("enter"))
 
-for(let i=1; i<=n ; i++){
-    for(let j=1; j<=i; j++){
-        process.stdout.write("* ");
+// for(let i=1; i<=n ; i++){
+//     for(let j=1; j<=i; j++){
+//         process.stdout.write("* ");
+//     }
+//     console.log(" ");
+    
+// }
+
+
+// Q5 right angle triangle in number
+
+let n = Number(prompt("enter number"))
+
+for(let i=1; i<=n; i++){
+    for(let j=1; j<=i ; j++){
+        process.stdout.write(j+" ");
+        
     }
     console.log(" ");
     
 }
+
 
 
