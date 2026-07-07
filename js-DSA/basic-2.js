@@ -33,18 +33,28 @@ let prompt = require('prompt-sync')();
 
 //Q3 rectangle pattern
 
+// let n = Number(prompt("enter"))
+
+// for(let i=1; i<=n; i++){
+//     for(let j=1; j<=n; j++){
+//         process.stdout.write("* ")
+//     }
+//     console.log(" ");
+    
+// }
+
+
+
+// Q4 right angle triangle 
+
 let n = Number(prompt("enter"))
 
-for(let i=1; i<=n; i++){
-    for(let j=1; j<=n; j++){
-        process.stdout.write("* ")
+for(let i=1; i<=n ; i++){
+    for(let j=1; j<=i; j++){
+        process.stdout.write("* ");
     }
     console.log(" ");
     
 }
-
-
-
-
 
 
