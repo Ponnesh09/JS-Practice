@@ -102,24 +102,44 @@ let prompt = require('prompt-sync')();
 // }
 
 // Q8 mirror right angle triangle
-let n = Number(prompt("enter "))
+
+// let n = Number(prompt("enter "))
 
 
-for(let i =1; i<=n; i++){
+// for(let i =1; i<=n; i++){
 
-    //invert
+//     //invert
+//     for(let j=1; j<=n-i; j++){
+//         process.stdout.write("  ");
+//     }
+
+//     // right angle
+//     for(let j=1; j<=i; j++){
+//         process.stdout.write("* ");
+
+//     }
+// console.log(" ");
+
+// }
+
+// Q9 triangle pattern
+
+ let n = Number(prompt("enter "))
+
+ for(let i=1; i<=n; i++){
+
     for(let j=1; j<=n-i; j++){
-        process.stdout.write("  ");
+        process.stdout.write(" ");
     }
 
-    // right angle
-    for(let j=1; j<=i; j++){
+    for(let k=1;k<=i; k++){
         process.stdout.write("* ");
 
     }
-console.log(" ");
+    console.log(" ");
+    
+ }
 
-}
 
 
 
