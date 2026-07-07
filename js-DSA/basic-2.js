@@ -19,18 +19,32 @@ let prompt = require('prompt-sync')();
 
 //Q2 print number of * in horizontally
 
-let num1 = Number(prompt("Enter number"))
+// let num1 = Number(prompt("Enter number"))
 
-for(let i = 2; i<= num1; i++){
-    process.stdout.write("* ");
+// for(let i = 1; i<= num1; i++){
+//     process.stdout.write("* ");
 
-    console.log(" ");
-}
-    for(let i=1; i<= num1; i++){
+//     console.log(" ");
+// }
+//     for(let i=1; i<= num1; i++){
+//         process.stdout.write("* ")
+//     }
+
+
+//Q3 rectangle pattern
+
+let n = Number(prompt("enter"))
+
+for(let i=1; i<=n; i++){
+    for(let j=1; j<=n; j++){
         process.stdout.write("* ")
     }
-
-
+    console.log(" ");
     
+}
+
+
+
+
 
 
