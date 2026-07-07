@@ -73,18 +73,30 @@ let prompt = require('prompt-sync')();
 
 
 
-// // Q6 right angle triangle in alphabet
+ // Q6 right angle triangle in alphabet
 
-let n = Number(prompt("enter number "))
+// let n = Number(prompt("enter number "))
+
+// for(let i=1; i<=n; i++){
+//             let ascii = 65
+//     for(let j=1; j<=i; j++){
+//         // process.stdout.write(ascii);
+//             process.stdout.write(String.fromCharCode(ascii)+" ");
+//             ascii ++
+//     }
+//     console.log(" ");
+    
+// }
+
+// Q7  inverted right angle triangle
+
+ let n = Number(prompt("enter number "))
 
 for(let i=1; i<=n; i++){
-            let ascii = 65
-    for(let j=1; j<=i; j++){
-        // process.stdout.write(ascii);
-            process.stdout.write(String.fromCharCode(ascii)+" ");
-            ascii ++
-    }
-    console.log(" ");
-    
-}
+        for(let j=1; j<=n-i+1;j++){
+        process.stdout.write("* ");
 
+        }
+        console.log(" ");
+        
+}
