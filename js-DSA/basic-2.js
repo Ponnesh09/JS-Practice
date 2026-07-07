@@ -143,21 +143,40 @@ let prompt = require('prompt-sync')();
 
 // Q10 create x pattern in *
 
- let n = Number(prompt("enter "))
+//  let n = Number(prompt("enter "))
 
-for(let i=1; i<=n ; i++){
+// for(let i=1; i<=n ; i++){
 
-    for(let j=1; j<=n; j++){
+//     for(let j=1; j<=n; j++){
 
-        if(i == j || i+j === n+1){
-            process.stdout.write("* ");
-        }else{
-            process.stdout.write(" ");
+//         if(i == j || i+j === n+1){
+//             process.stdout.write("* ");
+//         }else{
+//             process.stdout.write(" ");
 
-        }
+//         }
         
-    }
+//     }
 
+//     console.log(" ");
+    
+// }
+
+
+// Q11 create V pattern in *
+
+let n = Number(prompt("enter "))
+
+for(let i=1; i<=n; i++){
+
+    for(let j=1; j<=2*n-1; j++){
+
+        if(i == j || i+j == 2*n){
+            process.stdout.write("* ")
+        }else{
+            process.stdout.write(" ")
+        }
+    }
     console.log(" ");
     
 }
