@@ -9,11 +9,28 @@ let prompt = require('prompt-sync')();
 // process.stdout.write(pt)
 
 
-// Q1 print number of *
+// Q1 print number of * in vertically
 
-let num = Number(prompt("Enter number"))
+// let num = Number(prompt("Enter number"))
 
-for(let i= 1 ; i<=num; i++){
+// for(let i= 1 ; i<=num; i++){
+//     process.stdout.write("* ");
+// }
+
+//Q2 print number of * in horizontally
+
+let num1 = Number(prompt("Enter number"))
+
+for(let i = 2; i<= num1; i++){
     process.stdout.write("* ");
+
+    console.log(" ");
 }
+    for(let i=1; i<= num1; i++){
+        process.stdout.write("* ")
+    }
+
+
+    
+
 
