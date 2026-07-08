@@ -73,3 +73,17 @@ for(let i=0; i<totalNum.length; i++){
     }
 }
 console.log(`maximum number of array is ${max}`);
+
+
+
+// Q6 find min of array
+
+let min = totalNum[0]
+
+for(let i=0; i<totalNum.length; i++){
+    if(10 > totalNum[i]){
+        min = totalNum[i]
+    }
+}
+console.log(`minimum number of array is ${min}`);
+
