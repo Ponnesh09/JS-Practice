@@ -61,5 +61,15 @@ for(let i=0; i<totalNum.length; i++){
     sum += totalNum[i]
 }
 
-console.log(sum);
+// console.log(`sum of array ${sum}`);
 
+// Q5 find max of array
+
+let max = totalNum[0]
+
+for(let i=0; i<totalNum.length; i++){
+    if(10 < totalNum[i]){
+        max = totalNum[i]
+    }
+}
+console.log(`maximum number of array is ${max}`);
