@@ -25,3 +25,11 @@ arr1[3]=4;
 console.log(arr1.length);
 console.log(arr1);
 
+
+// Q1
+let prompt = require('prompt-sync')()
+
+let empArr = []
+empArr[0] = Number(prompt("write "))
+console.log(empArr);
+
