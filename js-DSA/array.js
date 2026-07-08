@@ -47,9 +47,19 @@ let empArr = []
 
 let num = new Array(5);
 for(let i=0; i<num.length; i++){
-    num[i] = Number(prompt("enter "))
+    // num[i] = Number(prompt("enter "))
 }
 
-console.log(num);
+// console.log(num);
 
+
+// Q4 find sum of array 
+
+let totalNum = [10,54,32,3,78]
+let sum = 0
+for(let i=0; i<totalNum.length; i++){
+    sum += totalNum[i]
+}
+
+console.log(sum);
 
