@@ -87,3 +87,20 @@ for(let i=0; i<totalNum.length; i++){
 }
 console.log(`minimum number of array is ${min}`);
 
+
+//Q7 find second max of array 
+
+let maxOne = Math.max(totalNum[0], totalNum[1]);
+let maxTwo = Math.max(totalNum[0], totalNum[1]);
+
+for(let i=1; i<totalNum.length; i++){
+    if(totalNum[i] > maxOne){
+        maxTwo = maxOne
+        maxOne = totalNum[i]
+    }else if(totalNum[i] > maxTwo && maxOne != totalNum[i]){
+        maxTwo = totalNum[i]
+     }
+}
+console.log(maxTwo);
+
+
