@@ -67,7 +67,7 @@ for(let i=0; i<totalNum.length; i++){
 
 let max = totalNum[0]
 
-for(let i=0; i<totalNum.length; i++){
+for(let i=1; i<totalNum.length; i++){
     if(10 < totalNum[i]){
         max = totalNum[i]
     }
@@ -80,7 +80,7 @@ console.log(`maximum number of array is ${max}`);
 
 let min = totalNum[0]
 
-for(let i=0; i<totalNum.length; i++){
+for(let i=1; i<totalNum.length; i++){
     if(10 > totalNum[i]){
         min = totalNum[i]
     }
@@ -93,7 +93,7 @@ console.log(`minimum number of array is ${min}`);
 let maxOne = Math.max(totalNum[0], totalNum[1]);
 let maxTwo = Math.max(totalNum[0], totalNum[1]);
 
-for(let i=1; i<totalNum.length; i++){
+for(let i=2; i<totalNum.length; i++){
     if(totalNum[i] > maxOne){
         maxTwo = maxOne
         maxOne = totalNum[i]
@@ -102,5 +102,21 @@ for(let i=1; i<totalNum.length; i++){
      }
 }
 console.log(maxTwo);
+
+
+//Q8  find second min of array 
+
+let minOne = Math.min(totalNum[0],totalNum[1]);
+let minTwo = Math.min(totalNum[0],totalNum[1]);
+
+for(let i = 2; i< totalNum.length ; i++){
+    if(totalNum[i] < minOne){
+        minTwo = minOne
+        minOne = totalNum[i]
+    }else if(totalNum[i] < minTwo && minOne != totalNum[i]){
+        minTwo = totalNum[i]
+    }
+}
+console.log(minTwo);
 
 
