@@ -30,6 +30,26 @@ console.log(arr1);
 let prompt = require('prompt-sync')()
 
 let empArr = []
-empArr[0] = Number(prompt("write "))
-console.log(empArr);
+// empArr[0] = Number(prompt("write "))
+// console.log(empArr);
+
+
+//Q2 
+
+// let num = new Array(5)
+// num[0] = Number(prompt("enter "))
+// console.log(num);
+
+//this is not work
+
+// Q3 accept value from user
+
+
+let num = new Array(5);
+for(let i=0; i<num.length; i++){
+    num[i] = Number(prompt("enter "))
+}
+
+console.log(num);
+
 
