@@ -14,5 +14,14 @@ console.log(arr[2]);
 
 
 
+//2nd method
 
+let arr1 = new Array(3)
+arr1[0]=1;
+arr1[1]=2;
+arr1[2]=3;
+arr1[3]=4;
+
+console.log(arr1.length);
+console.log(arr1);
 
