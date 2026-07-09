@@ -28,3 +28,16 @@ let result = document.getElementById("result");
 //     debouncingSearch(e.target.value)
 // })
 
+
+let timer
+
+search.addEventListener('input', ()=>{
+
+    clearTimeout(timer)
+
+    timer = setTimeout(()=>{
+        result.textContent = "searching " + search.ariaValueMax
+        console.log("searching value " ,search.value);
+        
+    },1000)
+} )
