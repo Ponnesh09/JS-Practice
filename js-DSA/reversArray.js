@@ -32,3 +32,15 @@ console.log(arr);
 
 // This is the standard in-place reversal algorithm with O(n) time complexity and O(1) extra space.
 
+
+
+let array = [1,2,3,4,5]
+let lef = 0 , rig = array.length-1 ;
+
+while (lef < rig){
+    [array[lef],array[rig]]=[array[rig],array[lef]];
+    lef++
+    rig--
+}
+
+console.log(array);
